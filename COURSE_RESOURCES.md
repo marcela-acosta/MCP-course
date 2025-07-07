@@ -28,7 +28,7 @@
       "command": "npx",
       "args": [
         "mcp-remote",
-        "<<<Paste the Zapier URL from zapier.com here, something like https://mcp.zapier.com/api/mcp/a/11353467/sse?serverId=31de37b5-d96d-404e-bdd1-7fb38bb8fe73>>>"
+        "<<<Paste the Zapier URL from zapier.com here, something like https://mcp.zapier.com/api/mcp/a/11353467/mcp>>>"
       ]
     }
   }
@@ -73,7 +73,7 @@ This is just an example. Ensure that you replace the Python path and your `binan
       "command": "npx",
       "args": [
         "mcp-remote",
-        "<<<Paste the Zapier URL from zapier.com here, something like https://mcp.zapier.com/api/mcp/a/11353467/sse?serverId=31de37b5-d96d-404e-bdd1-7fb38bb8fe73>>>"
+        "<<<Paste the Zapier URL from zapier.com here, something like https://mcp.zapier.com/api/mcp/a/11353467/mcp>>>"
       ]
     },
     "binance-mcp": {
