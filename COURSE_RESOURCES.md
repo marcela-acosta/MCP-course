@@ -60,7 +60,7 @@ You only need to use this tool when you have issues with Zapier opening Browser 
 
 ### Launching the MCP inspector
 ```
-npx @modelcontextprotocol/inspector <<PATH OF PYTHON>> <<PATH OF YOUR binance_mcp.py>>
+npx @modelcontextprotocol/inspector@0.16.2 <<PATH OF PYTHON>> <<PATH OF YOUR binance_mcp.py>>
 ```
 
 ### Adding Binance MCP to Claude / Cursor
