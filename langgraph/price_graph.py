@@ -35,8 +35,9 @@ mcp_config = {
 
 
 async def get_crypto_prices():
-    async with MultiServerMCPClient(mcp_config) as client:
-        tools = client.get_tools()
+    client = MultiServerMCPClient(mcp_config)
+    async with client.session("binance") as session:
+        tools = await client.get_tools()
 
         agent = create_react_agent(model, tools)
 
