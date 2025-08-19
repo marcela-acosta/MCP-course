@@ -228,6 +228,12 @@ docker buildx build --platform linux/amd64 -t simple-binance-mcp -t ghcr.io/zolt
 docker push ghcr.io/zoltanctoth/simple-binance-mcp
 ```
 
+## Deploying MCP to AWS
+This is the command we use for building and AWS-compatible MCP Docker image
+```
+docker buildx build --platform linux/amd64 -t mcp/binance-mcp . --load
+```
+
 ## Guillaume Raille - MCPAdapt / Huggingface Smolagents MCP & Real-World MCP Lessons Learned
 
 About Guillaume:
