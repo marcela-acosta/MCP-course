@@ -6,7 +6,7 @@ This repository showcases my project from the Udemy course, **"The Hands On MCP 
 
 The purpose of this repository is to demonstrate my practical skills in integrating external systems with Large Language Models (LLMs) using standardized, modern protocols.
 
-➡️ **Course Credits:** The foundational knowledge and step-by-step guidance for this project were provided by the [MCP Bootcamp: Build, Deploy & Secure Model Context Protocol on Udemy](https://www.udemy.com/course/learn-mcp-model-context-protocol-course-and-a2a-bootcamphands-hands-on/?referralCode=4BB6FF5CE336B4460CDA)
+➡️ **Course Credits:** The foundational knowledge and step-by-step guidance for this project were provided by the [MCP Bootcamp: Build, Deploy & Secure Model Context Protocol](https://www.udemy.com/course/learn-mcp-model-context-protocol-course-and-a2a-bootcamphands-hands-on/?referralCode=4BB6FF5CE336B4460CDA) on Udemy.
 
 ### Implemented Features
 
