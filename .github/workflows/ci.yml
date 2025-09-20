@@ -35,10 +35,8 @@ jobs:
 
       - name: Run tests
         run: |
-          echo "--- activating venv and testing ---"
-          echo "current directory: $(pwd)" 
-          echo "Content of .venv/bin before activating:" 
-          ls -l .venv/bin 
+          echo "--- Listing all files in the project directory ---"
+          ls -R
+          echo "--- Activating venv and running tests ---"
           source .venv/bin/activate
-          echo "Python en uso: $(which python)"
           pytest
