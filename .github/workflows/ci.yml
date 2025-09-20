@@ -28,9 +28,8 @@ jobs:
           uv venv
           source .venv/bin/activate
           uv pip install -e ".[ci]"
-          pip install pytest python-dotenv
 
       - name: Run tests
         run: |
           source .venv/bin/activate
-          pytest .github/test.py
+          pytest 
