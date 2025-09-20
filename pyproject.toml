@@ -48,3 +48,12 @@ ci = [
     "pytest",
     "pytest-dotenv",
 ]
+
+[tool.setuptools.packages.find]
+include = [
+    "langgraph",
+    "openai_mcp",
+    "binance_mcp",
+    "typescript_mcp",
+    "binance_mcp_reference_implementation"
+]
