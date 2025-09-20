@@ -23,31 +23,25 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-
-
-[tool.ruff]
-line-length = 79 
-
-[dependency-groups]
 dev = [
     "ruff>=0.11.10",
 ]
-
 smolagents = [
     "smolagents[mcp]",
     "transformers",
     "mcpadapt",
 ]
-
 openai = [
     "openai",
     "openai-agents",
 ]
-
 ci = [
     "pytest",
     "pytest-dotenv",
 ]
+
+[tool.ruff]
+line-length = 79
 
 [tool.setuptools.packages.find]
 include = [
