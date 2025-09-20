@@ -14,7 +14,7 @@ The purpose of this repository is to demonstrate my practical skills in integrat
 * **Multi-Provider LLM Integration:** The MCP was integrated with multiple AI ecosystems, including OpenAI (Agents API, Response API), Anthropic's Claude, and Cursor, demonstrating the protocol's interoperability.
 * **Development Environment:** A complete development environment (compatible with Mac & Windows) was configured for building and testing MCPs.
 * **Validation and Testing:** The **MCP Inspector** tool was used to debug the interactions between the LLM and the tool, ensuring that requests and responses adhered to the protocol.
-* **Deployment-Ready Container:** The MCP service was containerized using Docker, and the final image was published to the GitHub Package Registry to simulate a production deployment workflow.
+* **Deployment-Ready Container:** The MCP service was containerized using Docker, and the final image was published to the [GitHub Package Registry](https://github.com/users/marcela-acosta/packages/container/package/simple-binance-mcp) to simulate a production deployment workflow.
 * **Cloud Deployment on AWS:** The container was deployed to a serverless architecture on AWS using Elastic Container Service (ECS) with Fargate. This involved publishing the image to ECR, configuring task definitions, and setting up the necessary security groups.
 
 ## Key Technologies and Concepts
@@ -27,9 +27,9 @@ This project provided me with hands-on experience in the following areas:
 * **Programming Language:** Python (Primary)
 * **APIs & External Services:** Integrating with third-party REST APIs
 * **Core AI Concepts:**
-  * The mechanics of LLM Tool Calling.
-  * Standardization for LLM interoperability.
-  * The development and debugging lifecycle of an MCP.
+  * The mechanics of LLM Tool Calling
+  * Standardization for LLM interoperability
+  * The development and debugging lifecycle of an MCP
 
 ## Conclusions & Key Takeaways
 
