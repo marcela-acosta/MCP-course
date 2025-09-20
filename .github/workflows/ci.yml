@@ -23,11 +23,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies with uv
+      - name: Install dependencies and pytest
         run: |
           uv venv
           source .venv/bin/activate
           uv pip install -e ".[ci]"
+          pip install pytest
 
       - name: Run tests
         run: |
