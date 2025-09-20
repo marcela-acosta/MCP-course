@@ -20,7 +20,7 @@ async def run():
             await session.initialize()
 
             result = await session.call_tool(
-                "get_price", arguments={"symbol": "BTCUSDXXX"}
+                "get_price", arguments={"symbol": "BTCUSDT"}
             )
             print(result)
 
