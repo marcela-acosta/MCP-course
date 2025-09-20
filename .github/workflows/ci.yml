@@ -28,8 +28,17 @@ jobs:
           uv venv
           source .venv/bin/activate
           uv pip install -e ".[ci]"
+          echo "--- installed packages ---"
+          uv pip list 
+          echo "--- content of .venv/bin ---" 
+          ls -l .venv/bin 
 
       - name: Run tests
         run: |
+          echo "--- activating venv and testing ---"
+          echo "current directory: $(pwd)" 
+          echo "Content of .venv/bin before activating:" 
+          ls -l .venv/bin 
           source .venv/bin/activate
-          pytest 
+          echo "Python en uso: $(which python)"
+          pytest
