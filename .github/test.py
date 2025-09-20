@@ -12,9 +12,9 @@ REFERENCE_SCRIPTS = [
     ("binance_mcp_reference_implementation/binance_mcp_w_resource.py", []),
     ("binance_mcp/binance_mcp.py", []),
     ("langgraph/price_graph.py", []),
-    ("ref_openai_mcp/function_calling.py", ["openai"]),
-    ("ref_openai_mcp/mcp_with_openai_agent.py", ["openai"]),
-    ("ref_openai_mcp/mcp_with_responses_api.py", ["openai"]),
+    ("openai_mcp/function_calling.py", ["openai"]),
+    ("openai_mcp/mcp_with_openai_agent.py", ["openai"]),
+    ("openai_mcp/mcp_with_responses_api.py", ["openai"]),
 ]
 
 # Load .env only for missing env vars
