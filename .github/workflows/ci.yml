@@ -21,16 +21,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install dependencies with uv
         run: |
           uv venv
           source .venv/bin/activate
-          uv pip install -e .
-          uv pip install -r <(uv pip compile --extra ci pyproject.toml)
+          uv pip install -e ".[ci]"
 
       - name: Run tests
         run: |
           source .venv/bin/activate
-          pytest test.py 
+          pytest test.py
