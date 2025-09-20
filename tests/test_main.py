@@ -38,12 +38,10 @@ def run_script(script_path):
 def install_dependency_groups(groups):
     if not groups:
         return
-    for g in groups:
-        cmd = f"uv sync --group {g}"
-        # Use bash to support process substitution
-        result = subprocess.run(cmd, shell=True, executable="/bin/bash")
-        if result.returncode != 0:
-            raise RuntimeError(f"Failed to install dependency groups: {groups}")
+    cmd = ["uv", "pip", "install", f".[{','.join(groups)}]"] 
+    result = subprocess.run(cmd)
+    if result.returncode != 0:
+        raise RuntimeError(f"Failed to install dependency groups: {groups}")
 
 
 @pytest.mark.parametrize("script_path,groups", REFERENCE_SCRIPTS)
